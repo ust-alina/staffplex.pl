@@ -765,7 +765,7 @@ header {
 }
 @media (max-width: 768px) {
   .workers {
-    padding: 50px 30px;
+    padding: 50px 10px;
   }
 }
 @media (max-width: 480px) {
@@ -940,7 +940,7 @@ header {
 @media (max-width: 768px) {
   .workers_container .workers_row .worker_block_2 {
     width: 50%;
-    margin-top: 50px;
+    margin-top: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -953,7 +953,12 @@ header {
   .workers_container .workers_row .worker_block_2 {
     width: 100%;
     margin-top: 70px;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 @media (max-width: 480px) {
@@ -973,19 +978,30 @@ header {
   }
 }
 .workers_container .workers_row .worker_block_2 img {
-  height: 70%;
-  width: 70%;
+  height: 458px;
+  width: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media (max-width: 480px) {
+  .workers_container .workers_row .worker_block_2 img {
+    height: 356px;
+    width: auto;
+  }
+}
 .workers_container .workers_row .worker_block_2 .worker_text {
   position: absolute;
-  top: 450px;
+  top: 400px;
   left: 0;
 }
 @media (max-width: 768px) {
   .workers_container .workers_row .worker_block_2 .worker_text {
     left: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .workers_container .workers_row .worker_block_2 .worker_text {
+    top: 300px;
   }
 }
 .workers_container .workers_row .worker_block_2 .worker_text .worker_block_name {
