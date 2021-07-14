@@ -2,28 +2,30 @@ $(document).ready(function(){
 
   
 
-	$('.reviews_container').slick({
-        dots: true,
-        slidesToShow: 4,
-        speed: 1000,
-		responsive:[
-			{
-				breakpoint: 1000,
-				settings: {
-					rows: 2,
-					slidesToShow: 1,
-					slidesToScroll:1,
-					slidesPerRow: 2,
-					
-				}
-			},
-			{
-				breakpoint: 550,
-				settings: "unslick"
-			}
-		]
-        
-    });
+			$(".reviews_container").slick({
+				dots: true,
+				slidesToShow: 4,
+				speed: 1000,
+				responsive:[
+					{
+						breakpoint: 1200,
+						settings: {
+							slidesToShow: 3,
+	
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 2,
+	
+						}
+					}
+				]
+				
+			});
+	
+	
 
 	$('.partners_row_1').slick({
         dots: false,
@@ -110,6 +112,4 @@ $(function() {
     });
 
 });
-
-
 
