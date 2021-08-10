@@ -587,7 +587,7 @@ header {
             display: block;
             width: 694px;
             left: -486.5px;
-            top: 2274px;
+            top: 2374px;
             height: 658px;
         }
     }
@@ -1552,6 +1552,9 @@ header {
     h1 {
         width: auto;
     }
+    @media(max-width: 560px){
+        margin-left: 0px;
+    }
     .banner_text {
         width: 465px;
         margin-top: 20px;
@@ -1568,6 +1571,10 @@ header {
             justify-content: center;
         }
     }
+    @media(max-height: 900px){
+        margin-top: 0px;
+        margin-left: 70px;
+    }
     @media(max-width: 768px){
         margin-top: 242px;
         margin-left: 90px;
@@ -1576,10 +1583,7 @@ header {
         margin-top: 0px;
         margin-left: 0px;
     }
-    @media(max-height: 900px){
-        margin-top: 0px;
-        margin-left: 70px;
-    }
+
 }
 
 .btn {
@@ -3420,6 +3424,29 @@ header {
         @media(max-width: 560px){
             margin-bottom: 30px;
             flex-wrap: wrap;
+        
+        }
+        &:nth-child(4) {
+            @media(max-width: 560px){
+                margin-bottom: 0;
+            }
+        }
+        &:nth-child(5) {
+
+            .form_item {
+                @media(max-width: 560px){
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin: 15px 0;
+                }
+                .btn {
+                    @media(max-width: 560px){
+                        margin-right:0;
+                    }
+                }
+            }
+
         }
         .form_text {
             a {
@@ -3550,6 +3577,7 @@ header {
 .seach_vacansi {
     padding-top: 180px;
     position: relative;
+    overflow: hidden;
     @media(max-width: 768px){
         padding-top: 80px;
     }
@@ -3578,8 +3606,8 @@ header {
     img {
         position: absolute;
         z-index: 3;
-        left: - 40px;
-        width: 130%;
+        left:0;
+        width: 100vw;
         top:0;
         &.red {
             z-index: 2;
@@ -4887,6 +4915,7 @@ header {
     }
     @media(max-width: 480px){
         margin-bottom: 400px;
+        overflow: visible;
     }
     .main_wrap {
         position: relative;
@@ -4940,7 +4969,7 @@ header {
             flex-direction: column;
             align-items: center;
             margin-top: 50px;
-            height: 690px;
+            height: 100%;
             padding: 0 20px;
         }
         &>img {
@@ -4957,8 +4986,10 @@ header {
                 bottom: -120px;
                 left:40px;
             }
-            @media(max-width: 768px){
-                bottom:0;
+            @media(max-width: 480px){
+                bottom:-420px;
+                left:0;
+                width: 100%;
                 
             }
         }
@@ -5221,11 +5252,10 @@ header {
             width: auto;
             height: 574px;
             @media(max-width: 768px){
-                width: 398px;
-                right: 30px;
+                height: 465px;
             }
             @media(max-width: 480px){
-                width: 323px;
+                height: 402px;
                 right: auto;
                 left: 50%;
                 transform: translateX(-50%);
@@ -5241,6 +5271,12 @@ header {
                 padding-top: 50px;
             }
             .banner_left {
+                @media(max-width: 768px){
+                    padding-top: 50px;
+                }
+                @media(max-width: 480px){
+                    padding-top: 0px;
+                }
                 h1 {
                     font-size: 42px;
                     @media(max-width: 480px){
