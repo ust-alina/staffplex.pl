@@ -79,6 +79,8 @@ $(document).ready(function(){
 		}
 	});
 
+
+
 	
 		
 	
@@ -91,6 +93,26 @@ $(document).ready(function(){
 		$('.burger_menu').toggleClass('open-menu');
 		$('body').toggleClass('fixed-page');
 	});
+
+	$('.praca_quest_block_title').click(function() {
+		$(this).toggleClass('active');
+		$(this).next().toggleClass('active');
+        $('.praca_quest_block_title').not(this).removeClass('active')
+		  .not(this).next().removeClass('active');
+	});
+    
+
+	$('.media_que_tab').click(function() {
+		$('.media_que_tab').not(this).removeClass('active');
+		$(this).addClass('active');
+		let number = $(this).index();
+		let ell = $('.media_que_video_block').eq(number);
+		$('.media_que_video_block').eq(number).addClass("active");
+		$('.media_que_video_block').not(ell).removeClass("active");
+	});
+
+
+
 
 
 });
@@ -110,6 +132,18 @@ $(function() {
 	 burger.removeClass('visible');
 	  }
     });
+
+
+	/*var target = $('.partners_cooperation');
+var targetPos = target.offset().top;
+var winHeight = $(window).height();
+var scrollToElem = targetPos - winHeight;
+$(window).scroll(function(){
+  var winScrollTop = $(this).scrollTop();
+  if(winScrollTop > scrollToElem){
+    $('.partners_cooperation .main_title_wrap').css({'position': 'absolute'})
+  }
+});*/
 
 });
 
