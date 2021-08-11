@@ -59,7 +59,13 @@ $(document).ready(function() {
 					.addTo(controller);
 
 
-
+		var scene7 = new ScrollMagic.Scene({
+						triggerElement: ".seach_vacansi",
+						duration: "600",
+						offset: "500"
+					})
+					.setTween(".seach_vacansi img", 0.5, {left: "-100px"}) // trigger a TweenMax.to tween
+					.addTo(controller);
 
 	}
 });

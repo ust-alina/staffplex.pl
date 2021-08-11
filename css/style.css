@@ -447,6 +447,7 @@ header {
   background-size: cover;
   height: 100vh;
   min-height: 700px;
+  overflow: hidden;
 }
 @media (max-width: 480px) {
   .banner {
@@ -3985,6 +3986,11 @@ header {
     margin: 50px auto;
   }
 }
+@media (max-width: 480px) {
+  #main_reviews_select {
+    width: 100%;
+  }
+}
 
 .partners {
   padding-top: 114px;
@@ -4524,6 +4530,7 @@ header {
   padding-top: 180px;
   position: relative;
   overflow: hidden;
+  padding-bottom: 230px;
 }
 @media (max-width: 768px) {
   .seach_vacansi {
@@ -4534,6 +4541,10 @@ header {
   .seach_vacansi {
     margin-bottom: 100px;
   }
+}
+.seach_vacansi .main_wrap {
+  position: relative;
+  z-index: 5;
 }
 .seach_vacansi.visible .vacnsii_red {
   z-index: 4;
@@ -4559,9 +4570,9 @@ header {
 .seach_vacansi img {
   position: absolute;
   z-index: 3;
-  left: 0;
-  width: 100vw;
-  top: 0;
+  left: -2000px;
+  width: 4000px;
+  top: 50px;
 }
 .seach_vacansi img.red {
   z-index: 2;
@@ -4994,7 +5005,7 @@ header {
 }
 
 .vacansii {
-  margin-top: 230px;
+  margin-top: 30px;
   margin-bottom: 64px;
   width: 100%;
   padding: 80px 22px 30px;
@@ -6531,6 +6542,11 @@ header {
   max-width: 732px;
   margin-left: auto;
 }
+@media (max-width: 560px) {
+  .partners_form_wrapper .main_title {
+    max-width: 306px;
+  }
+}
 
 .partners_form {
   display: -webkit-box;
@@ -6539,6 +6555,11 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .partners_form {
+    margin-top: 40px;
+  }
 }
 .partners_form img {
   max-width: 566px;
