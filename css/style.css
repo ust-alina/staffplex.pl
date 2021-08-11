@@ -4584,14 +4584,12 @@ header {
 }
 @media (max-width: 768px) {
   .seach_vacansi img {
-    width: 200%;
     left: -700px;
     top: 200px;
   }
 }
 @media (max-width: 480px) {
   .seach_vacansi img {
-    width: 550%;
     left: -350px;
   }
 }

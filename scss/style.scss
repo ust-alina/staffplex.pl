@@ -3631,12 +3631,11 @@ header {
         }
         
         @media(max-width: 768px){
-            width: 200%;
+
             left: -700px;
             top: 200px;
         }
         @media(max-width: 480px){
-            width: 550%;
             left: -350px;
         }
     }
@@ -5010,7 +5009,6 @@ header {
             position: relative;
             width: 1000px;
             height: 100vh;
-            
             padding-bottom: 200px;
             margin: 0 auto;
             &:first-child {
